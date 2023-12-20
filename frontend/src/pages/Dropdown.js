@@ -4,6 +4,9 @@ import logout from '../img/log-out.png';
 import reset from '../img/reset.png';
 import './dropdown.css';
 
+import { useLogout } from '../hooks/useLogout.js';
+//import { useAuthContext } from '../hooks/useAuthContext'
+import { Link } from 'react-router-dom';
 import React, {useState, useEffect, useRef} from 'react';
 
 function Dropdown() {
@@ -51,10 +54,16 @@ function Dropdown() {
 }
 
 function DropdownItem(props){
+  const { logout } = useLogout()
+
+  const handleClick = () => {
+    logout()
+  }
+
   return(
     <li className = 'dropdownItem'>
       <img src={props.img} alt="sql"></img>
-      <a href="/login"> {props.text} </a>
+      <Link onClick={handleClick}> {props.text} </Link>
     </li>
   );
 }

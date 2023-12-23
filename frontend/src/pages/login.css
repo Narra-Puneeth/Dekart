@@ -1,0 +1,32 @@
+.firstpage{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: #fff;
+  justify-content: space-between;
+  height:calc(80vh - 50px );
+  width: 91vw;
+}
+.column-card{
+  background-color: white;
+  background-image: url("https://truust.io/wp-content/uploads/2017/09/Que%CC%81-es-un-Marketplace-y-co%CC%81mo-puedes-ganar-dinero-con-e%CC%81l.jpg");
+  height: 75vh;
+  width: 70vw;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 4px;
+}
+.head-first{
+  font-size: 30px;
+  margin: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: white;
+}
+.para-first{
+  font-size: 24px;
+  margin: 10px;
+  margin-top: 5px;
+  color: white;
+}

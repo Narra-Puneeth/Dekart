@@ -5,7 +5,6 @@ import reset from '../img/reset.png';
 import './dropdown.css';
 
 import { useLogout } from '../hooks/useLogout.js';
-//import { useAuthContext } from '../hooks/useAuthContext'
 import { Link } from 'react-router-dom';
 import React, {useState, useEffect, useRef} from 'react';
 
@@ -36,9 +35,8 @@ function Dropdown() {
     <div className="App">
       <div className='menu-container' ref={menuRef}>
         <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
-          <img src={contact} alt="sql"></img>
+          <img src={contact} style={{backgroundColor:"lightgrey"}} alt="sql"></img>
         </div>
-
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
           <h3>Options</h3>
           <ul>

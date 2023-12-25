@@ -1,0 +1,85 @@
+/* .side{
+  background-color: red;
+  height: calc(100vh - 69px);
+  width: 300px;
+} */
+
+.sidebar{
+  width:350px;
+  height: calc(100vh - 70px);
+  background-color: rgb(139, 153, 222);
+  overflow-y: scroll; 
+  margin: 0px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  height: 2vh;
+  background-color: rgb(179, 179, 179);
+}
+.sidebarWrapper {
+  padding: 20px;
+  padding-top: 35px;
+}
+.sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  height: 30px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  color:black;
+}
+.sidebarListItem:hover{
+  cursor: pointer;
+  align-items: center;
+  background-color: rgba(33, 63, 61, 0.518);
+  border-radius: 4px;
+  color: #fff;
+  width: 270px;
+}
+.sidebarLink{
+  color:black;
+}
+.sidebarLink:hover{
+  color:#fff;
+  font-size: 24px;
+
+}
+.sidebarIcon {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: large;
+}
+.sidebarHr {
+  margin: 20px 0;
+  border-style: solid;
+  background-color:white;
+}
+.sell-button{
+  background-color: rgb(65, 78, 214);
+  margin-left: 20px;
+  padding: 10px;
+  padding-left: 10px;
+  width: 270px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 3px;
+  color:white;
+  font-size: 20px;
+  text-align: center;
+}
+.categ-Text{
+  font-size: 24px;
+}

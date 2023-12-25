@@ -1,0 +1,19 @@
+/* Layout.css */
+
+/* Style for the whole layout container */
+.layout {
+  display: flex;
+  margin:0px;
+  
+}
+
+/* Style for the sidebar */
+.sidebar {
+  width: 350px;
+}
+
+/* Style for the content area */
+.content {
+  flex: 1; /* Fill remaining space */
+  padding:  0px; /* Add some padding for content */
+}

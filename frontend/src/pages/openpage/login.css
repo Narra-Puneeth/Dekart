@@ -5,14 +5,14 @@
   background-color: #fff;
   justify-content: space-between;
   height:calc(80vh - 50px );
-  width: 91vw;
+  width: 90%;
 }
 .column-card{
   background-color: white;
   background-image: url("https://truust.io/wp-content/uploads/2017/09/Que%CC%81-es-un-Marketplace-y-co%CC%81mo-puedes-ganar-dinero-con-e%CC%81l.jpg");
-  height: 75vh;
-  width: 70vw;
-  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  background-size: contain;
   display: inline-block;
   border-radius: 4px;
 }

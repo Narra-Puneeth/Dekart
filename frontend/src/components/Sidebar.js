@@ -45,6 +45,12 @@ function Sidebar() {
               <span className="sidebarListItemText">Recently Uploaded</span>
             </Link>
           </li>
+          <li className="sidebarListItem" onClick={() => handleNavigation('/profile')}>
+            <Link to="/profile" className="sidebarLink">
+              <StoreIcon htmlColor="Blue" className="sidebarIcon" />
+              <span className="sidebarListItemText">Profile</span>
+            </Link>
+          </li>
           <li className="sidebarListItem" onClick={() => handleNavigation('/chats')}>
             <Link to="/chats" className="sidebarLink">
               <CableIcon className="sidebarIcon" />

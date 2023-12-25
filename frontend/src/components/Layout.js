@@ -5,6 +5,7 @@ import './layout.css'; // Import your CSS file for layout styles
 import { Routes, Route } from 'react-router-dom';
 import Feed from "../pages/feed/Feed";
 import Chats from '../pages/chats/Chats';
+import Profile from '../pages/profile/Profile';
 const Layout = () => {
   return (
       <div className="layout">
@@ -13,6 +14,7 @@ const Layout = () => {
           <Routes>
             <Route path="*" element={<Feed />} />
             <Route path="/chats" element={<Chats />} />
+            <Route path="/profile" element={<Profile />} />
             {/* Other routes for different sections */}
           </Routes>
         </div>

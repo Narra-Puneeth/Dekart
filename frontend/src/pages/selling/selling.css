@@ -1,0 +1,65 @@
+
+.wrapper{
+  background: rgb(220, 229, 232);
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0,0.35);
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper .form{
+  width: 100%;
+}
+.wrapper .form .input_field{
+  margin-bottom: 15px;
+  align-items: center;
+}
+.wrapper .form .input_field label{
+  width: 100px;
+  font-size: 18px;
+  color:black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.wrapper .form .input_field .input,
+/* .wrapper .form .input_field .filename, */
+.wrapper .form .input_field .textarea,
+.wrapper .form .input_field .category{
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  font-size:15px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition:all 0.3s ease;
+}
+.wrapper .form .input_field .input,
+/* .wrapper .form .input_field .filename, */
+.wrapper .form .input_field .textarea{
+  margin-top: 5px;
+}
+.wrapper .btnn{
+  padding-left: 173px;
+  margin-top: 20px;
+}
+
+.wrapper .btn{
+  border-radius: 9px;
+  background-color: lightgray;
+  border-color: skyblue;
+}
+.wrapper .btn:active{
+  box-shadow: none;
+  transform: translateY(5px);
+}

@@ -3,8 +3,8 @@
 /* Style for the whole layout container */
 .layout {
   display: flex;
-  margin:0px;
-  
+  height: calc(100vh - 70px);
+  background-color: aqua;
 }
 
 /* Style for the sidebar */
@@ -14,6 +14,7 @@
 
 /* Style for the content area */
 .content {
-  flex: 1; /* Fill remaining space */
-  padding:  0px; /* Add some padding for content */
+  flex: 1; /* Fill remaining space */ /* Add some padding for content */
+  overflow-y: scroll;
+  background-color: rgb(220, 229, 232);
 }

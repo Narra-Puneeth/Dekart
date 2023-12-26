@@ -7,7 +7,7 @@
 .sidebar{
   width:350px;
   height: calc(100vh - 70px);
-  background-color: rgb(139, 153, 222);
+  background-color: rgb(196, 202, 233);
   overflow-y: scroll; 
   margin: 0px;
 }
@@ -19,7 +19,7 @@
 }
 ::-webkit-scrollbar-thumb {
   height: 2vh;
-  background-color: rgb(179, 179, 179);
+  background-color: rgb(122, 120, 120);
 }
 .sidebarWrapper {
   padding: 20px;

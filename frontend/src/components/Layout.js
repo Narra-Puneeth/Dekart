@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Feed from "../pages/feed/Feed";
 import Chats from '../pages/chats/Chats';
 import Profile from '../pages/profile/Profile';
+import Selling from '../pages/selling/Selling';
 const Layout = () => {
   return (
       <div className="layout">
@@ -15,6 +16,7 @@ const Layout = () => {
             <Route path="*" element={<Feed />} />
             <Route path="/chats" element={<Chats />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/sell" element={<Selling />} />
             {/* Other routes for different sections */}
           </Routes>
         </div>

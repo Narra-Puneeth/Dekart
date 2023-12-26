@@ -33,7 +33,9 @@ function Sidebar() {
             </Link>
           </li>
         </ul>
-        <button className='sell-button'>+ Sell Something</button>
+        <Link to="/sell" className="sidebarLink">
+          <button className='sell-button' onClick={() => handleNavigation('/sell')}>+ Sell Something</button>
+        </Link>
         <hr className="sidebarHr" />
         <ul className="sidebarList">
           <li>
@@ -41,13 +43,13 @@ function Sidebar() {
           </li>
           <li className="sidebarListItem" onClick={() => handleNavigation('/feed')}>
             <Link to="/feed" className="sidebarLink">
-              <StoreIcon htmlColor="Blue" className="sidebarIcon" />
+              <StoreIcon htmlColor="voilet" className="sidebarIcon" />
               <span className="sidebarListItemText">Recently Uploaded</span>
             </Link>
           </li>
           <li className="sidebarListItem" onClick={() => handleNavigation('/profile')}>
             <Link to="/profile" className="sidebarLink">
-              <StoreIcon htmlColor="Blue" className="sidebarIcon" />
+              <StoreIcon htmlColor="gery" className="sidebarIcon" />
               <span className="sidebarListItemText">Profile</span>
             </Link>
           </li>
@@ -59,13 +61,13 @@ function Sidebar() {
           </li>
           <li className="sidebarListItem" onClick={() => handleNavigation('/chats')}>
             <Link to="/chats" className="sidebarLink">
-              <PhoneAndroidIcon htmlColor="silver" className="sidebarIcon" />
+              <PhoneAndroidIcon htmlColor="RED" className="sidebarIcon" />
               <span className="sidebarListItemText">Electronics</span>
             </Link>
           </li>
           <li className="sidebarListItem" onClick={() => handleNavigation('/chats')}>
             <Link to="/chats" className="sidebarLink">
-              <LibraryBooksIcon htmlColor="lightblue" className="sidebarIcon" />
+              <LibraryBooksIcon htmlColor="aqua" className="sidebarIcon" />
               <span className="sidebarListItemText">Books</span>
             </Link>
           </li>

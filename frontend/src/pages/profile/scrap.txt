@@ -1,0 +1,15 @@
+ <div class="profile-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt="" />
+                <div style={{display:"inline-block"}}  class="file btn btn-lg btn-primary">
+                  Change Photo
+                  <input type="file" name="file" />
+                </div>
+              </div>
+              =================================================
+
+               <Container className='big-out'>
+      <Row>
+        <Col md={6}> HLO 1 </Col>
+        <Col md={6}> HLO 2 </Col>
+      </Row>
+    </Container>

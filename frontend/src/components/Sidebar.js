@@ -39,7 +39,7 @@ function Sidebar() {
         <hr className="sidebarHr" />
         <ul className="sidebarList">
           <li>
-            <h2>Categories</h2>
+            <h2 style={{color:"#fff",fontSize:"27px"}}>Categories</h2>
           </li>
           <li className="sidebarListItem" onClick={() => handleNavigation('/feed')}>
             <Link to="/feed" className="sidebarLink">

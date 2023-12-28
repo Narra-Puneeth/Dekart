@@ -7,11 +7,11 @@ const Navbar = () => {
 
   const { user } = useAuthContext();
   return (
-    <header style={{backgroundColor:"#343a40",height:"50px",paddingBottom:"18px",margin:"0px",width:"100%"}}>
+    <header style={{backgroundColor:"DodgerBlue",height:"50px",paddingBottom:"18px",margin:"0px",width:"100%"}}>
       <div className="container" style={{height:"50px"}} >
         <div className='marketplace'>
-        <AddBusinessIcon htmlColor="#d9d9d9" style={{height:"35px",width:"35px"}}/>
-        <span style={{marginLeft:"10px",color:"#d9d9d9"}}>Decart</span>
+        <AddBusinessIcon htmlColor="lightblue" style={{height:"35px",width:"35px"}}/>
+        <span style={{marginLeft:"10px",color:"lightblue"}}>Market place</span>
         </div>
         <nav>
           {!user && (

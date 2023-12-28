@@ -16,5 +16,5 @@
 .content {
   flex: 1; /* Fill remaining space */ /* Add some padding for content */
   overflow-y: scroll;
-  background-color: #343a40;
+  background-color: white;
 }

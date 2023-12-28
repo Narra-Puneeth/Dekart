@@ -1,5 +1,24 @@
+import { useState } from "react"
+import { useList } from "../../hooks/useList"
 import './selling.css';
+
 const Selling = () => {
+    const [name, setName] = useState('')
+    const [description, setDescription] = useState('')
+    const [category,setCategory] = useState('')
+    const [startPrice,setstartPrice] = useState('')
+    const [condition,setCondition] = useState('')
+    const [phone,setPhone] = useState('')
+    const [address,setAddress] = useState('')
+    const [city,setCity] = useState('')
+    const [pincode,setpincode] = useState('')
+    const {list, error, isLoading} = useList()
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+    
+        await list(name,description,category,startPrice,condition,phone,address,city,pincode)
+      }
 
     // const x = document.getElementById("demo");
 
@@ -23,15 +42,17 @@ const Selling = () => {
             </div>
 
             <div className="form">
-
+            <form className="signup" onSubmit={handleSubmit}>
                 <div className="input_field">
                     <label >NAME</label>
-                    <input type="text" className="input" />
+                    <input type="text" className="input" onChange={(e) => setName(e.target.value)} 
+        value={name}/>
                 </div>
 
                 <div className="input_field">
                     <label >DESCRIPTION</label>
-                    <textarea className="textarea"></textarea>
+                    <textarea className="textarea" onChange={(e) => setDescription(e.target.value)} 
+        value={description}></textarea>
                 </div>
 
                 <div className="input_field">
@@ -41,7 +62,8 @@ const Selling = () => {
 
                     <div className="input_field">
                         <label >CATEGORY</label>
-                        <select name="category" id="category">
+                        <select name="category" id="category" onChange={(e) => setCategory(e.target.value)} 
+        value={category} >
                             <option>Art</option>
                             <option>Books</option>
                             <option>Cameras</option>
@@ -68,46 +90,59 @@ const Selling = () => {
                     </div>
 
                     <div className="input_field">
-                        <label >START PRICE</label>
-                        <input type="text" className="input" />
+                        <label >START startPrice</label>
+                        <input type="text" className="input" onChange={(e) => setstartPrice(e.target.value)} 
+        value={startPrice} />
                     </div>
 
-                    <div className="input_field">
+                    <div className="input_field" >
                         <label >CONDITION</label>
-                        <select name="category" id="category">
-                            <option value="new">New</option>
-                            <option value="used">Used</option>
+                        <select name="category" id="category" onChange={(e) => setCondition(e.target.value)} 
+        value={condition} >
+                            <option>new</option>
+                            <option>old</option>
                         </select>
                     </div>
                     <div className="input_field">
                         <label> PHONE N.O: </label>
-                        <input type="text" className='input' />
-                    </div>
-                    <div className='input_field'>
-                        <label >CITY</label>
-                        <input type="text" className='input' />
-                    </div>
-                    <div className="input_field">
-                        <label >PIN-CODE</label>
-                        <input type="text" className='input' />
+                        <input type="text" className='input' onChange={(e) => setPhone(e.target.value)} 
+        value={phone} />
                     </div>
                     <div className="input_field">
                         <label>ADDRESS</label>
-                        <textarea className='textarea' ></textarea>
+                        <textarea className='textarea' onChange={(e) => setAddress(e.target.value)} 
+        value={address} ></textarea>
                     </div>
+                    <div className='input_field'>
+                        <label >CITY</label>
+                        <input type="text" className='input' onChange={(e) => setCity(e.target.value)} 
+        value={city} />
+                    </div>
+                    <div className="input_field">
+                        <label >pincode-CODE</label>
+                        <input type="text" className='input' onChange={(e) => setpincode(e.target.value)} 
+        value={pincode} />
+                    </div>
+                    
                     {/* <div className="input_field">
                         <p>Click the button to get your coordinates.</p>
                         <button onclick={getLocation()}>Add Current Location</button>
                         <p id="demo"></p>
                     </div> */}
-                    <div className="btnn">
+                    {/* <div className="btnn">
                         <input type="submit" value="LIST ITEM" className='btn' />
-                    </div>
+                    </div> */}
 
+                    <button disabled={isLoading}>List Item</button>
+                    {error && <div className="error">{error}</div>}    
+                    
                 </div>
+                </form>
             </div>
         </div>
     );
 }
 
+
 export default Selling;
+

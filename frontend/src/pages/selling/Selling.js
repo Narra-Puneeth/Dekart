@@ -42,7 +42,7 @@ const Selling = () => {
             </div>
 
             <div className="form">
-            <form className="signup" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div className="input_field">
                     <label >NAME</label>
                     <input type="text" className="input" onChange={(e) => setName(e.target.value)} 
@@ -90,7 +90,7 @@ const Selling = () => {
                     </div>
 
                     <div className="input_field">
-                        <label >START startPrice</label>
+                        <label >START PRICE</label>
                         <input type="text" className="input" onChange={(e) => setstartPrice(e.target.value)} 
         value={startPrice} />
                     </div>
@@ -119,7 +119,7 @@ const Selling = () => {
         value={city} />
                     </div>
                     <div className="input_field">
-                        <label >pincode-CODE</label>
+                        <label >PIN-CODE</label>
                         <input type="text" className='input' onChange={(e) => setpincode(e.target.value)} 
         value={pincode} />
                     </div>

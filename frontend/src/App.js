@@ -3,14 +3,14 @@ import { useAuthContext } from './hooks/useAuthContext'
 import { Navigate } from 'react-router-dom';
 import Login from './pages/openpage/Login.js'
 import Signup from './pages/openpage/Signup.js'
-import Navbar from './components/Navbar'
+import NavB from './components/Navbar'
 import Layout from './components/Layout.js';
 function App() {
   const { user } = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <NavB />
         <div className="content">
           <Routes>
             <Route

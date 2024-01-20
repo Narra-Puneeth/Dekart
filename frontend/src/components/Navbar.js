@@ -11,11 +11,19 @@ const Navbar = () => {
   }
 
   return (
+<<<<<<< Updated upstream
     <header>
       <div className="container">
         <Link to="/">
           <h1>Market Place</h1>
         </Link>
+=======
+    <header style={{backgroundColor:"gray",height:"50px",paddingBottom:"18px",width:"100%"}}>
+      <div className="container" style={{height:"50px"}} >
+        <AddBusinessIcon htmlColor="lightblue" style={{height:"35px",width:"35px"}} className='icon' />
+        <span  className='title' style={{color:"lightblue"}}>Market place</span>
+        
+>>>>>>> Stashed changes
         <nav>
           {user && (
             <div>
